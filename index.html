@@ -5,29 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-    <title>GRIS-MAR</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>GRIS-MAR</title>
 </head>
 <body>
     
 <header>
-<img src="./images/Logo.png" alt="logo de la tienda GRIS-MAR">
-<h1>GRIS-MAR</h1>
-<h2>Polirrubros</h2>
+
+  <div class="logo">
+    <a href="./index.html"><img id="logo" src="./images/Logo.png" alt="logo de la tienda GRIS-MAR"></a>
+      <div class="titulo">
+      <a href="./index.html"><h1>GRIS-MAR</h1></a>
+      <h2>Polirrubros</h2>
+      </div>
+  
+</div>
+  <div class="menu">
+      <nav>   
+        <ul>
+          <li><a href="./pages/almace.html">Almacen</a></li>
+          <li><a href="./pages/limpieza.html">Limpieza</a></li>
+          <li><a href="./pages/bebidas.html">Bebidas</a></li>
+          <li><a href="./pages/regalos.html">Regalos</a></li>
+          <li><a href="./pages/electronica.html">Electronica</a></li>
+        </ul>  
+      </nav>
+  </div>
 
 </header>
-<nav>
-    <ul>
-        <li><a href="./pages/almace.html">Almacen</a></li>
-        <li><a href="./pages/limpieza.html">Limpieza</a></li>
-        <li><a href="./pages/bebidas.html">Bebidas</a></li>
-        <li><a href="./pages/regalos.html">Regalos</a></li>
-        <li><a href="./pages/electronica.html">Electronica</a></li>
-    </ul>
-</nav>
 
 <section> 
-    <h2>Promociones Bancarias</h2>
+    <h3>Promociones Bancarias</h3>
 
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -66,84 +75,74 @@
 
 </section>
 
+<h3>OFERTAS</h3>
 
-<section>
-<h2>OFERTAS</h2>
+<section class="ofertas">
 
-<div id="carouselExampleCaptions" class="carousel slide">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>First slide label</h5>
-          <p>Some representative placeholder content for the first slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
-        </div>
-      </div>
-      <div class="carousel-item active">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333" dy=".3em">Third slide</text></svg>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+<div class="card">
+<img src="./images/ofertas/oferta1.jpg" alt="">
+<h4>Oferta 1</h4>
+<p>Gaseosas, Jugos, Cervezas y congelados</p>
+</div>
+
+<div class="card">
+<img src="./images/ofertas/oferta2.jpg" alt="">
+<h4>Oferta 2</h4>
+<p>Fideos secos, Arroz, Arvejas, endulsantes y combos</p>
+</div>
+
+<div class="card">
+<img src="./images/ofertas/oferta3.jpg" alt="">
+<h4>Oferta 3</h4>
+<p>Fiambres, Gaseosas, vinos, y energizantes</p>
+</div>
+
+<div class="card">
+<img src="./images/ofertas/oferta4.jpg" alt="">
+<h4>Oferta 4</h4>
+<p>Rollos de cocina, Limpia vidriod, Shampoo y alimento para mascotas</p>
+</div>
 
 </section>
 
 
-<section>
-    <h2>Confian en nosotros</h2>
+
+
+<section class="confian">
+    <h3>Confian en nosotros</h3>
     
+    <img src="./images/confian/arcor.png" alt="">
     <img src="./images/confian/cabrales.png" alt="">
     <img src="./images/confian/catena.png" alt="">
     <img src="./images/confian/coca.png" alt="">
     <img src="./images/confian/laSerenisima.png" alt="">
+    <img src="./images/confian/lucchetti.png" alt="">
+    <img src="./images/confian/marolio.png" alt="">
     <img src="./images/confian/quilmes.png" alt="">
+    <img src="./images/confian/sancor.png" alt="">
     <img src="./images/confian/unilever.png" alt="">
-
 
 </section>
 
 
 <section>
-    <h2>Contacto</h2>
-<form>
+    <h3>Contacto</h3>
+<form action="https://formspree.io/f/xlderojq" method="POST">
 <!--aca va el formulario-->
 <p>Datos personales</p>
 <label for="Nombre">Nombre: </label>
-    <input type="text" id="Nombre" placeholder="Escribe tu nombre" > <br>
+    <input type="text" id="Nombre" name="Nombre" placeholder="Escribe tu nombre" > <br>
 <label for="Apellido">Apellido: </label>
-    <input type="text" id="Apellido" placeholder="Escribe tu apellido" > <br>
+    <input type="text" id="Apellido" name="Apellido" placeholder="Escribe tu apellido" > <br>
 <label for="numero">Celular:</label>
-    <input type="number" id="numero" placeholder="123456789" > <br>
+    <input type="number" id="numero" name="numero" placeholder="123456789" > <br>
 <label for="email">Email: </label>
-    <input type="email" id="email" placeholder="Escribe tu email" > <br>
+    <input type="email" id="email" name="email" placeholder="Escribe tu email" > <br>
 <label for="textarea">Ingresa tus comentarios</label>
-    <textarea name="" id="textarea" cols="30" rows="10"></textarea> <br>    
+    <textarea name="" id="textarea" cols="30" rows="10"></textarea> <br>
 
-<input type="button" value="Enviar"> 
-<input type="button" value="Cancelar">
+    <button type="submit">Send</button> 
+<!-- <input type="button" value="Cancelar"> -->
 
 
 
