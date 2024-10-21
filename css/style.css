@@ -6,7 +6,7 @@ body {
   margin: 0;
 }
 
-header {
+.header {
   display: flex;
   justify-content: space-between;
   min-height: 70px;
@@ -16,7 +16,6 @@ header {
   position: fixed;
   z-index: 1000;
   width: 100%;
-  
 }
 
 a {
@@ -32,7 +31,6 @@ a {
 .menu nav ul li {
   list-style: none;
   display: inline;
-
 }
 
 .menu nav ul li a {
@@ -40,18 +38,11 @@ a {
   color: #111;
   font-weight: 600;
   padding-right: 10px;
-  
 }
 
 nav a:hover {
   color: #bbb;
   font-style: oblique;
-}
-
-@media (max-width: 700px) {
-  header {
-    flex-direction: column;
-  }
 }
 
 .menu {
@@ -61,14 +52,12 @@ nav a:hover {
 
 .titulo a h1 {
   color: #111;
-  font-size: 50px;
+  font-size: 40px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
   margin: 0;
 }
-
-
 
 h2 {
   color: #444;
@@ -89,7 +78,7 @@ h2 {
 
 /* Estilo para reducir el tamaño del carousel */
 .carousel-item img {
-  width: 80%;  /* Ajusta el ancho (ej. 80% del contenedor) */
+  width: 80%; /* Ajusta el ancho (ej. 80% del contenedor) */
   height: auto; /* Mantiene la proporción de la imagen */
   max-height: 400px; /* Limita la altura máxima */
   object-fit: cover; /* Ajusta cómo la imagen se adapta dentro del contenedor */
@@ -100,11 +89,10 @@ h2 {
 /* Opcionalmente, puedes ajustar el contenedor del carousel */
 .carousel {
   max-width: 800px; /* Ajusta el ancho máximo del carousel */
-  margin-top: 110px;
+  margin-top: 140px;
   margin-bottom: 50px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .confian {
@@ -122,16 +110,14 @@ h2 {
   color: #444;
   font-size: 30px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-  "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: 700;
-   
 }
 
 .confian img {
   width: 100px;
   margin: 10px;
   border-radius: 5px;
-
 }
 
 .ofertas {
@@ -171,4 +157,20 @@ h2 {
   margin: 0;
   padding: 10px;
   align-items: end;
+}
+
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    background-color: aqua;
+    
+  }
+  .titulo a h1{
+    font-size: 30px;
+    
+  }
+
+  .carousel{
+    margin-top: 155px;
+  }
 }
