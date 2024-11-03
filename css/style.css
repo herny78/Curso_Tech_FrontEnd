@@ -12,10 +12,11 @@ body {
   align-items: center;
   background-color: #333599;
   padding: 10px;
-  position: fixed;
-  z-index: 1000;
+  /* position: fixed; */
+  /* z-index: 1000; */
   width: 100%;
   top: 0;
+  margin-bottom: 30px;
 }
 
 .titulo a h1 {
@@ -105,17 +106,7 @@ h2 {
   margin: 0;
 }
 
-.promociones_h3 {
-  background-color: #333599;
-  margin-top: 150px;
-  padding: 15px;
-  color: #ffffff;
-  font-size: 30px;
-  font-family: "Merienda", cursive;
-  text-align: center;
-  margin: auto;
-  position: relative;
-}
+
 
 .confian_h3, .ofertas_h3, .contacto_h3 {
   margin-top: 30px;
@@ -153,12 +144,17 @@ h2 {
 }
 
 .confian {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: #111 solid 2px;
   border-radius: 10px;
   padding: 10px;
   margin: 35px;
   background-color: #ccc;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  width: auto;
+  height: auto;
 }
 
 .confian img {
@@ -254,6 +250,7 @@ h2 {
 }
 
 .mapa{
+  
   margin: 20px 0 0 40px;
   border-radius: 10px;
   display: block;
@@ -273,7 +270,14 @@ h2 {
   width: 50%;
   text-align: center;
   margin: auto;
-  margin-top: 150px;
+  background-color: #333599;  
+  padding: 15px;
+  color: #ffffff;
+  font-size: 30px;
+  font-family: "Merienda", cursive;
+  text-align: center;
+  margin: auto;
+  position: relative;
 }
 
 .datosDeContacto p{
@@ -336,19 +340,38 @@ h2 {
   background-color: #007bff;
 }
 
-@media (max-width: 700px) {
+.formasDeContacto{
+  margin-bottom: 20px;
+}
+
+/* archivo CSS personalizado */
+.bg-custom-blue {
+  background-color: #333599;
+}
+
+
+@media (max-width: 500px) {
   .header {
+    
     flex-direction: column;
-    align-items: flex-start;
+    /* align-items: flex-start; */
+    display: flex;
+    
+  }
+
+  #logo {
+    display: none;
   }
 
   .menu {
     margin-top: 10px;
+    
   }
 
   .menu ul {
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: flex-start;
+    flex-wrap: wrap;
   }
 
   .menu li {
@@ -358,7 +381,28 @@ h2 {
     font-size: 30px;
   }
 
-  .carousel{
-    margin-top: 155px;
+  .promociones_h3{
+    width: 80%;
+    padding: 15px;
+    font-size: 20px;
   }
+  .contacto_h3, .confian_h3, .ofertas_h3{
+    width: 80%;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .confian {
+    display: flex;
+    padding: 5px;
+    margin: 5px;
+        
+  }
+
+  .confian img {
+    width: 20%;
+    margin: 5px;
+    border-radius: 5px;
+    }
+
 }

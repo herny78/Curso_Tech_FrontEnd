@@ -1,0 +1,196 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;}
+
+
+body {
+  background-color: #5a5d96;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333599;
+  padding: 10px;
+  /* position: fixed; */
+  /* z-index: 1000; */
+  width: 100%;
+  top: 0;
+}
+
+.titulo a h1 {
+  font-family: "Merienda", cursive;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.menu {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+}
+
+.menu nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.menu nav ul li {
+  margin: 0 15px;
+}
+
+.menu nav ul li:not(:last-child) {
+  padding-left: 10px;
+}
+
+.menu nav ul li a {
+  color: #ffffff;
+  font-weight: 600;
+  padding: 5px;
+  transition: background-color 0.7s ease;
+  border-radius: 10px;
+}
+
+.menu nav ul li a:hover {
+  background-color: #ccc;
+  color: #111;
+  padding: 8px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  gap: 20px;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.icons a {
+  font-size: 1.5em;
+  margin-left: 15px;
+  color: #ffffff;
+  transition: background-color 0.7s ease;
+  border-radius: 10px;
+}
+
+.icons a:hover {
+  background-color: #ccc;
+  color: #111;
+  padding: 8px;
+}
+
+.icons img {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 30px;
+  font-family: "Merienda", cursive;
+  text-align: center;
+  margin: 0;
+}
+
+
+
+#logo {
+  width: 100px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+/* Flexbox */
+
+.contentFlexBox {
+  /* margin-top: 200px; */
+  
+  min-height: 200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 20px;
+  gap: 20px;
+  
+}
+.item{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+/* Flexbox */
+
+/* customizacion del footer */
+.bg-custom-blue {
+  background-color: #333599;
+}
+
+@media (max-width: 400px) {
+  .header {
+    
+    flex-direction: column;
+    /* align-items: flex-start; */
+    display: flex;
+    
+  }
+  #logo {
+    display: none;
+  }
+
+  .menu {
+    margin-top: 10px;
+    
+  }
+
+  .menu ul {
+    /* flex-direction: column; */
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .menu li {
+    margin-bottom: 10px;
+  }
+  .titulo a h1{
+    font-size: 30px;
+  }
+
+  .contentFlexBox{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+
+
+
+
+}
